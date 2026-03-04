@@ -1,0 +1,20 @@
+body
+{
+    margin: 100px;
+    background-color: rgb(255, 200, 236);
+
+}
+
+h2
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(135, 77, 6);
+    background-color: bisque;
+}
+
+p
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-size: medium;
+}
