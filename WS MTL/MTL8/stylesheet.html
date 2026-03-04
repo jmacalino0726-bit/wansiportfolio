@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Same Page Different Styles</title>
+
+<style>
+
+
+body{
+    background:#dcdcdc;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:20px;
+}
+
+
+.header{
+    background:#ad007f;
+    color:white;
+    padding:20px;
+    border-radius:5px;
+}
+
+.header h1{
+    margin:0;
+}
+
+.header p{
+    margin:5px 0 0;
+}
+
+
+.container{
+    display:flex;
+    gap:20px;
+    margin-top:15px;
+}
+
+
+.menu{
+    width:200px;
+}
+
+.menu button{
+    width:100%;
+    padding:10px;
+    margin-bottom:8px;
+    border:1px solid #aaa;
+    background:#e6e6e6;
+    text-align:left;
+    cursor:pointer;
+    border-radius:3px;
+}
+
+.menu button:hover{
+    background:#e93aa9;
+}
+
+
+.content{
+    flex:1;
+}
+
+.content h2{
+    margin-top:0;
+}
+
+
+.sidebar{
+    width:220px;
+    background:#ff89ce;
+    color:white;
+    padding:20px;
+    border-radius:5px;
+}
+
+
+.footer{
+    margin-top:20px;
+    background:#eeeeee;
+    padding:15px;
+    border-radius:5px;
+    border:1px solid #bbb;
+}
+
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .menu, .sidebar{
+        width:100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="header">
+    <h1>Welcome to My Homepage</h1>
+    <p>Use the menu to select different Stylesheets</p>
+</div>
+
+<div class="container">
+
+    <div class="menu">
+        <button class="active">Stylesheet 1</button>
+        <button>Stylesheet 2</button>
+        <button>Stylesheet 3</button>
+        <button>Stylesheet 4</button>
+        <button>No Stylesheet</button>
+    </div>
+
+
+    <div class="content">
+        <h2>Same Page Different Stylesheets</h2>
+        <p>
+        This is a demonstration of how different stylesheets can change
+        the layout of your HTML page.
+        </p>
+
+        <h3>No Styles</h3>
+        <p>
+        This page uses DIV elements to group different sections of the HTML page.
+        </p>
+    </div>
+
+    <div class="sidebar">
+        <h3>Side-Bar</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+    </div>
+
+</div>
+
+
+<div class="footer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+</div>
+
+</body>
+</html>
