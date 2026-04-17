@@ -5,168 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Flexbox</title>
     <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-      body {
-        font-family: Arial, sans-serif;
-        background: #fff;
-      }
+  body {
+    font-family: Arial, sans-serif;
+    background: #fffafc;
+  }
 
-      .part1 {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-      }
+  .part1 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
-      .flex-12a {
-        display: flex;
-      }
-      .flex-12a .box:nth-child(1) {
-        width: 200px;
-        height: 30px;
-        background-color: #f4a7b9;
-      }
-      .flex-12a .box:nth-child(2) {
-        width: 75px;
-        height: 30px;
-        background-color: #e090a3;
-      }
+  .flex-12a {
+    display: flex;
+  }
+  .flex-12a .box:nth-child(1) {
+    width: 200px;
+    height: 30px;
+    background-color: #ffb7c5;
+  }
+  .flex-12a .box:nth-child(2) {
+    width: 75px;
+    height: 30px;
+    background-color: #ffd1dc;
+  }
 
-      .flex-12b {
-        display: flex;
-      }
-      .flex-12b .box:nth-child(1) {
-        width: 50px;
-        height: 30px;
-        background-color: #a3dba5;
-      }
-      .flex-12b .box:nth-child(2) {
-        flex: 1;
-        height: 30px;
-        background-color: #c8e6c9;
-      }
-      .flex-12b .box:nth-child(3) {
-        width: 75px;
-        height: 30px;
-        background-color: #a3dba5;
-      }
+  .flex-12b {
+    display: flex;
+  }
+  .flex-12b .box:nth-child(1) {
+    width: 50px;
+    height: 30px;
+    background-color: #b5ead7;
+  }
+  .flex-12b .box:nth-child(2) {
+    flex: 1;
+    height: 30px;
+    background-color: #c7f0db;
+  }
+  .flex-12b .box:nth-child(3) {
+    width: 75px;
+    height: 30px;
+    background-color: #b5ead7;
+  }
 
-      .flex-12c {
-        display: flex;
-        justify-content: space-between;
-      }
-      .flex-12c .box {
-        width: 60px;
-        height: 30px;
-        background-color: #c8e6c9;
-      }
+  .flex-12c {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-12c .box {
+    width: 60px;
+    height: 30px;
+    background-color: #d7e3fc; 
+  }
 
-      .flex-12d {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 50px;
-        border: 2px solid gray;
-      }
-      .flex-12d .box {
-        width: 60px;
-        height: 30px;
-        background-color: #c8e6c9;
-      }
+  .flex-12d {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 2px solid #cdb4db;
+  }
+  .flex-12d .box {
+    width: 60px;
+    height: 30px;
+    background-color: #e4c1f9; 
+  }
 
-      .part2 {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        margin-top: 40px;
-      }
+  .part2 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 40px;
+  }
 
-      .part2 header {
-        background-color: #f5f5dc;
-        border-bottom: 10px solid #c8b400;
-        flex: 0 0 120px;
-      }
+  .part2 header {
+    background-color: #fff1e6;
+    border-bottom: 10px solid #ffcad4;
+    flex: 0 0 120px;
+  }
 
-      .part2 .main-content {
-        display: flex;
-        flex: 1;
-      }
+  .part2 .main-content {
+    display: flex;
+    flex: 1;
+  }
 
-      .part2 .left-nav {
-        background-color: #4caf50;
-        border-right: 10px solid #c8b400;
-        width: 30%;
-      }
+  .part2 .left-nav {
+    background-color: #caffbf;
+    border-right: 10px solid #ffd6a5; 
+    width: 30%;
+  }
 
-      .part2 .right-nav {
-        background-color: #4caf50;
-        flex: 1;
-      }
+  .part2 .right-nav {
+    background-color: #caffbf;
+    flex: 1;
+  }
 
-      .part2 footer {
-        background-color: #f5f5dc;
-        border-top: 10px solid #c8b400;
-        flex: 0 0 80px;
-      }
+  .part2 footer {
+    background-color: #fff1e6;
+    border-top: 10px solid #ffcad4;
+    flex: 0 0 80px;
+  }
 
-      @media (max-width: 799px) {
-        .part2 .main-content {
-          flex-direction: column;
-        }
-        .part2 .right-nav {
-          width: 100%;
-          order: 1;
-          flex: 1;
-          border-right: none;
-          border-bottom: 10px solid #c8b400;
-        }
-        .part2 .left-nav {
-          width: 100%;
-          order: 2;
-          flex: 1;
-          border-right: none;
-        }
-      }
-    </style>
+  @media (max-width: 799px) {
+    .part2 .main-content {
+      flex-direction: column;
+    }
+    .part2 .right-nav {
+      width: 100%;
+      order: 1;
+      flex: 1;
+      border-right: none;
+      border-bottom: 10px solid #ffd6a5;
+    }
+    .part2 .left-nav {
+      width: 100%;
+      order: 2;
+      flex: 1;
+      border-right: none;
+    }
+  }
+</style>
   </head>
   <body>
+    
     <div class="part1">
+
+      <div><b>12a</b></div>
       <div class="flex-12a">
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">200px</div>
+        <div class="box">75px</div>
       </div>
 
+      <div><b>12b</b></div>
       <div class="flex-12b">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">item1</div>
+        <div class="box">item2</div>
+        <div class="box">item3</div>
       </div>
 
+      <div><b>12c</b></div>
       <div class="flex-12c">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">item1</div>
+        <div class="box">item2</div>
+        <div class="box">item3</div>
+        <div class="box">item4</div>
       </div>
 
+      <div><b>12d</b></div>
       <div class="flex-12d">
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">item1</div>
+        <div class="box">item2</div>
       </div>
+
     </div>
 
     <div class="part2">
-      <header></header>
+      <header>This is a header</header>
+
       <div class="main-content">
-        <div class="left-nav"></div>
-        <div class="right-nav"></div>
+        <div class="left-nav">Section left-nav</div>
+        <div class="right-nav">Section right-nav</div>
       </div>
-      <footer></footer>
+
+      <footer>This is a footer</footer>
     </div>
+
   </body>
 </html>
