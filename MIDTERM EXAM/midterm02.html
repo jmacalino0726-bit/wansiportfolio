@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #d7d1d1;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+  border: 10px solid orange;
+}
+
+.logo,
+.nav,
+.header,
+.footer {
+  border-bottom: 10px solid orange;
+  padding: 20px;
+  text-align: center;
+}
+.logo {
+  text-align: left;
+}
+.header {
+  height: 120px;
+  padding-top: 49px;
+}
+.footer {
+  border-bottom: none;
+  border-top: 5px solid orange;
+}
+
+.main {
+  display: flex;
+}
+.sidebar {
+  width: 30%;
+  padding: 60px 20px;
+  border-right: 25px solid orange;
+  text-align: center;
+}
+.content {
+  width: 70%;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+@media (max-width: 698px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 50px solid orange;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+
+}
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>midterm 02</title>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="logo">Logo</div>
+
+  <div class="nav">Navigation</div>
+
+  <div class="header">Header/Banner</div>
+
+  <div class="main">
+
+    <div class="sidebar">Side Bar</div>
+
+    <div class="content">Body Area</div>
+  </div>
+
+  <div class="footer">Footer</div>
+</div>
+</body>
+</html>
