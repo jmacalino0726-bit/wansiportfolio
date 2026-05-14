@@ -1,0 +1,84 @@
+ body {
+      background: #fff;
+      padding: 20px;
+    }
+
+
+    .btn-primary {
+      background: skyblue;
+      width: 105px;
+      padding: 5px 1px 5px 8px;
+      border-radius: 5px;
+    }
+
+
+    .sm2, .sm3 {
+      background: #f27062;
+      flex: 1;
+    }
+
+    .tl { background: #5f9ea0; }
+
+    .b1 {
+      background: #3b5edb;
+      flex: 1;
+    }
+
+    .b2 {
+      background: #3b5edb;
+      flex: 2;
+    }
+
+    .g { background: #2e8b57; }
+    .p {
+      background: #8a00c4;
+      border: 2px solid rgb(221, 189, 46);
+    }
+
+    .dk { background: #2f4f4f; }
+
+    .sec {
+      background: #eeeded;
+      padding: 10px 20px;
+    }
+
+    .s1, .s6 {
+      background: #dddcdc;
+      padding: 20px;
+    }
+
+    .s2 {
+      background: #dddcdc;
+      padding: 1px 20px 20px;
+    }
+    .bx {
+      padding: 20px;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .s3, .s5 {
+      background: #dddcdc;
+      padding: 15px 20px 1px;
+    }
+
+    .s4 {
+      background: #dddcdc;
+      padding: 15px 20px;
+    }
+
+    .s7 {
+      background: #e4f2fc;
+      padding: 10px 20px;
+    }
+
+    .pk { background: #ff5ea8; }
+
+    .sm1 {
+      background: #f27062;
+      flex: 3;
+    }
+
+    .t1 {
+      color: #5803b8;
+    }

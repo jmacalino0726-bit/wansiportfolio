@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.textbox {
+        display: block;
+        width: 150px;
+        padding: 2px;
+        margin-bottom: 10px;
+        }
+
+span.a {
+        background-color: #ffffff;
+        color: black;
+        padding: 15px;
+        width: 400px;
+        margin-top: 20px;
+}
+
+span.b {
+        display: inline-block;
+        width: 250px;
+        vertical-align: middle;
+}
+span.c {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px 10px;
+        margin-left: 5px;
+}
+
+.google-section { 
+        background-color: #f2f2f2;
+        width: 500px;
+        padding: 20px;
+        margin-top: 30px;
+}
+
+.google-logo {
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 200px;
+}
+
+.search-box {             
+        display: block;
+        width: 93%;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+}
+
+
+.container {
+        display: flex;
+        gap: 60px;
+        margin-top: 30px;
+}
+
+.signup-box {
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 280px;
+        border-radius: 5px;
+}
+
+.signup-box input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+}
+
+.name-row {
+        display: flex;
+        gap: 10px;
+}
+
+.name-row input {
+        width: 50%;
+}
+
+.signup-btn {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(to right, #3b82f6, #2563eb);
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+}
+
+.uber-box {
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 320px;
+        border-radius: 5px;
+        color: black;
+}
+
+.uber-box h2 {
+        margin-top: 0;
+        font-size: 26px;
+}
+
+.uber-box input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: none;
+        background-color: #e5e5e5;
+        box-sizing: border-box;
+}
+
+.uber-buttons {
+        margin-top: 10px;
+}
+
+.request {
+        padding: 10px 15px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+}
+
+.schedule {
+        padding: 10px 15px;
+        background-color: #d9d9d9;
+        border: none;
+        cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+    <input type="text" class="textbox" placeholder="Name">
+    <input type="text" class="textbox" placeholder="Email">
+
+     <div class="a">
+        <p class="b">
+            Thanks for chatting with our customer support.<br> 
+            Would you like to take our quick survey?
+        </p>
+        <button class="c">Yes</button>
+        <button class="c">No</button>
+    </div>
+<br>
+    <div class="google-section">
+        <img src="GOGOL.webp"
+             alt="Google Logo"
+             class="google-logo">
+
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" class="search-box"
+                   placeholder="Search Google or type a URL">
+        </form>
+    </div>
+
+
+    <div class="container">
+
+        <div class="signup-box">
+            <div class="name-row">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="First name">
+            </div>
+            <input type="email" placeholder="Email">
+            <button class="signup-btn">Sign Up</button>
+        </div>
+
+        
+        <div class="uber-box">
+            <h2>Request a ride now</h2>
+            <input type="text" placeholder="Enter pickup location">
+            <input type="text" placeholder="Enter destination">
+
+            <div class="uber-buttons">
+                <button class="request">Request now</button>
+                <button class="schedule">Schedule for later</button>
+            </div>
+        </div> 
+
+    </div>
+
+</body>
+</html>
